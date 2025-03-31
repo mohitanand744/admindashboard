@@ -2,7 +2,7 @@
 
 
 import React, { useState } from 'react'
-import { MdContactSupport, MdHome, MdPeopleAlt } from "react-icons/md";
+import { MdContactSupport, MdHome, MdOutlineCancel, MdPeopleAlt } from "react-icons/md";
 import { FaUsers, FaBriefcase, FaClipboardCheck, FaBuilding, FaCartArrowDown } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import MenuItem from '../Navbar/Menus/Menu';
@@ -24,8 +24,12 @@ const Sidebar: React.FC<Props> = ({ setOpenF, openF }: Props) => {
   return (
     <div className='flex flex-col justify-between h-full py-5 overflow-y-auto text-xl font-bold text-white hideScrollBar'>
       <div className="flex flex-col h-full">
-        <div className="w-[90%] py-5 rounded-2xl bg-[#00000041] lg:bg-[#ffffff41] dark:bg-[#00000041] text-gray-600 dark:text-white mx-auto">
+        <div className="w-[90%] relative py-5 rounded-2xl bg-[#00000041] lg:bg-[#ffffff41] dark:bg-[#00000041] text-gray-600 dark:text-white mx-auto">
           <img className='w-[10rem] mx-auto' src="https://weboconnect.com/assets/images/logo/logo.png" alt="" />
+
+          <div onClick={() => setOpenF(false)} className="absolute text-3xl text-red-400 cursor-pointer top-2 right-2">
+            <MdOutlineCancel className='' />
+          </div>
         </div>
 
         <ul className="w-[90%] mt-4 h-full flex overflow-y-auto flex-col gap-3 px-5 py-5 rounded-2xl bg-[#00000041] lg:bg-[#ffffff41] dark:bg-[#00000041] text-gray-600 dark:text-white mx-auto">
