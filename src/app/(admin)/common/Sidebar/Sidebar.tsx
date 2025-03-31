@@ -27,7 +27,7 @@ const Sidebar: React.FC<Props> = ({ setOpenF, openF }: Props) => {
         <div className="w-[90%] relative py-5 rounded-2xl bg-[#00000041] lg:bg-[#ffffff41] dark:bg-[#00000041] text-gray-600 dark:text-white mx-auto">
           <img className='w-[10rem] mx-auto' src="https://weboconnect.com/assets/images/logo/logo.png" alt="" />
 
-          <div onClick={() => setOpenF(false)} className="absolute text-3xl text-red-400 cursor-pointer top-2 right-2">
+          <div onClick={() => setOpenF(false)} className="absolute block text-3xl text-red-400 cursor-pointer lg:hidden top-2 right-2">
             <MdOutlineCancel className='' />
           </div>
         </div>
