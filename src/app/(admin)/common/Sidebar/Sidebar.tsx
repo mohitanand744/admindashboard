@@ -5,8 +5,8 @@ import React, { useState } from 'react'
 import { MdContactSupport, MdHome, MdOutlineCancel, MdPeopleAlt } from "react-icons/md";
 import { FaUsers, FaBriefcase, FaClipboardCheck, FaBuilding, FaCartArrowDown } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
-import MenuItem from '../Navbar/Menus/Menu';
-import DropDown from '../Navbar/DropDowns/DropDown';
+import MenuItem from './Menus/Menu';
+import DropDown from './DropDowns/DropDown';
 import { LuBoxes } from 'react-icons/lu';
 import { TbSettingsFilled } from 'react-icons/tb';
 

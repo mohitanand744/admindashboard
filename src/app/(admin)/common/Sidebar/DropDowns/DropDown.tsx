@@ -55,7 +55,7 @@ const DropDown: React.FC<DropDownProps> = ({ openDropdown }) => {
   return (
     <ul
       className={`${openDropdown.value
-        ? "min-h-[18.6rem] opacity-100 py-4 px-1 sm:p-4 mb-3 scale-100 translate-y-0"
+        ? "min-h-[18.6rem] opacity-100 py-4 px-2 sm:p-4 mb-3 scale-100 translate-y-0"
         : "h-[0] opacity-0 p-0 gap-0 scale-95 translate-y-[-10px]"
         } overflow-hidden transition-all flex flex-col gap-2 duration-300 ease-in-out bg-[#fff] dark:bg-[#00000041] text-gray-600 dark:text-white rounded-2xl`}
     >

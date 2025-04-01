@@ -41,13 +41,15 @@ const MenuItem: React.FC<MenuItemProps> = ({ openDropdown, setOpenDropdown, icon
       <li
         onClick={() => {
           if (!setOpenF) return;
-          setOpenF(false)
+          if (!openDropdown || !setOpenDropdown) {
+            setOpenF(false)
+          }
 
           if (!openDropdown || !setOpenDropdown) return;
           setOpenDropdown({ ...openDropdown, department: !openDropdown.department });
         }}
 
-        className={`p-3 text-sm ${active ? 'bg-[#00000041] text-white border dark:border-white border-gray-100 dark:bg-[#1E293B]' : 'bg-[#fff] text-gray-600 dark:bg-[#00000041]'} sm:hover:scale-105 transition-all duration-200 cursor-pointer flex justify-between gap-3 items-center   dark:text-white rounded-full text-center ${className}`}
+        className={`p-3 text-sm ${active ? 'bg-[#00000041] text-white border dark:border-white border-gray-100 dark:bg-[#f8f8f834]' : 'bg-[#fff] text-gray-600 dark:bg-[#00000041]'} sm:hover:scale-105 transition-all duration-200 cursor-pointer flex justify-between gap-3 items-center   dark:text-white rounded-full text-center ${className}`}
       >
         <div className="flex items-center gap-3">
           {icon}  {title}
