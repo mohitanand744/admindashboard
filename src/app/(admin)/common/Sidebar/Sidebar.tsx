@@ -21,6 +21,7 @@ const Sidebar: React.FC<Props> = ({ setOpenF, openF }: Props) => {
     department: false,
   });
 
+
   return (
     <div className='flex flex-col justify-between h-full py-5 overflow-y-auto text-xl font-bold text-white hideScrollBar'>
       <div className="flex flex-col h-full">
@@ -35,29 +36,34 @@ const Sidebar: React.FC<Props> = ({ setOpenF, openF }: Props) => {
         <ul className="w-[90%] mt-4 h-full flex overflow-y-auto hideScrollBar flex-col gap-3 px-5 py-5 rounded-2xl bg-[#00000041] lg:bg-[#ffffff41] dark:bg-[#00000041] text-gray-600 dark:text-white mx-auto">
 
           <MenuItem
+            setOpenF={setOpenF}
             icon={<MdHome className='text-xl' />}
             title='Dashboard'
             link='/dashboard'
           />
           <MenuItem
+            setOpenF={setOpenF}
             icon={<FaUsers className='text-lg' />}
             title='Workers'
-            link='/employes'
+            link='/workers'
           />
 
           <MenuItem
+            setOpenF={setOpenF}
             icon={<FaBriefcase className='text-md' />}
             title='Jobs'
             link='/jobs'
           />
 
           <MenuItem
+            setOpenF={setOpenF}
             icon={<FaClipboardCheck className='text-md' />}
             title='On Boarding'
             link='/onBoarding'
           />
 
           <MenuItem
+            setOpenF={setOpenF}
             icon={<FaBuilding className='text-md' />}
             title='Departments'
             openDropdown={openDropdown}
@@ -67,33 +73,39 @@ const Sidebar: React.FC<Props> = ({ setOpenF, openF }: Props) => {
 
           <DropDown openDropdown={{
             value: openDropdown.department
-          }} />
+          }}
+          />
 
           <MenuItem
+            setOpenF={setOpenF}
             icon={<LuBoxes className='text-lg' />}
             title='Products'
             className='mt-[-0.7rem]'
             link='/products'
           />
           <MenuItem
+            setOpenF={setOpenF}
             icon={<FaCartArrowDown className='text-lg' />}
             title='Orders'
             link='/orders'
           />
 
           <MenuItem
+            setOpenF={setOpenF}
             icon={<MdPeopleAlt className='text-lg' />}
             title='Customers'
             link='/customers'
           />
 
           <MenuItem
+            setOpenF={setOpenF}
             icon={<TbSettingsFilled className='text-lg' />}
             title='Settings'
             link='/settings'
           />
 
           <MenuItem
+            setOpenF={setOpenF}
             icon={<MdContactSupport className='text-lg' />}
             title='Support & Help'
             link='/support'

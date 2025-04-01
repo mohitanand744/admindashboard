@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "custom-gradient": "linear-gradient(180deg, #E7C16D, #E7C16D)",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

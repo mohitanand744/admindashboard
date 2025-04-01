@@ -14,7 +14,7 @@ export default function DashboardLayout({
 
   return (
     <div className="h-[100vh]   
-        bg-[url('https://www.baltana.com/files/wallpapers-19/Light-Blue-Gradient-4K-Wallpaper-7216.jpg')] 
+        bg-[url('https://images.pexels.com/photos/912110/pexels-photo-912110.jpeg?cs=srgb&dl=pexels-elia-clerici-282848-912110.jpg&fm=jpg')] 
         dark:bg-[url('https://images.unsplash.com/photo-1641895964758-3e4374714a8c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8')]
         bg-cover bg-center bg-no-repeat">
       <div className="relative flex h-full gap-5 p-4 overflow-hidden transition-all duration-300 md:p-8">
