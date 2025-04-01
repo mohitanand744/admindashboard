@@ -32,7 +32,7 @@ const Sidebar: React.FC<Props> = ({ setOpenF, openF }: Props) => {
           </div>
         </div>
 
-        <ul className="w-[90%] mt-4 h-full flex overflow-y-auto flex-col gap-3 px-5 py-5 rounded-2xl bg-[#00000041] lg:bg-[#ffffff41] dark:bg-[#00000041] text-gray-600 dark:text-white mx-auto">
+        <ul className="w-[90%] mt-4 h-full flex overflow-y-auto hideScrollBar flex-col gap-3 px-5 py-5 rounded-2xl bg-[#00000041] lg:bg-[#ffffff41] dark:bg-[#00000041] text-gray-600 dark:text-white mx-auto">
 
           <MenuItem
             icon={<MdHome className='text-xl' />}
