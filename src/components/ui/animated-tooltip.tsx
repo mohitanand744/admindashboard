@@ -67,17 +67,17 @@ export const AnimatedTooltip = ({
                   translateX: translateX,
                   whiteSpace: "nowrap",
                 }}
-                className="absolute w-[200px] z-50 flex flex-col items-center justify-center px-4 py-2 mt-2 text-xs -translate-x-1/2 bg-white dark:bg-[#101620]  rounded-md top-full right-1/2"
+                className="absolute border w-[200px] z-50 flex flex-col items-center justify-center px-4 py-2 mt-2 text-xs -translate-x-1/2 bg-white dark:bg-[#101620]  rounded-md top-full right-1/2"
               >
                 <div className="absolute inset-x-10 -top-px z-30 h-px w-[70%] bg-gradient-to-r from-transparent via-emerald-500 to-transparent" />
                 <div className="absolute -top-px left-10 z-30 h-px w-[40%] bg-gradient-to-r from-transparent via-sky-500 to-transparent" />
-              
-              <div className="flex flex-col text-white items-center bg-[#00000063] p-1 rounded-xl w-full mb-3">
-              <div className="relative z-30 text-base font-bold dark:text-white">
-                  {item.name}
+
+                <div className="flex flex-col text-white items-center bg-[#00000063] p-1 rounded-xl w-full mb-3">
+                  <div className="relative z-30 text-base font-bold dark:text-white">
+                    {item.name}
+                  </div>
+                  <div className="text-[1rem] dark:text-white mb-4">{item.designation}</div>
                 </div>
-                <div className="text-[1rem] dark:text-white mb-4">{item.designation}</div>
-              </div>
 
                 <ul className="flex flex-col w-full gap-2 px-2 py-3 mb-4 dark:border-white border-y rounded-2xl">
 
